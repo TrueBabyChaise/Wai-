@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/WAI-.dir/src/Logger/Logger.cpp.o CMakeFiles/WAI-.dir/src/Parser/Parser.cpp.o CMakeFiles/WAI-.dir/src/Token/Token.cpp.o CMakeFiles/WAI-.dir/src/Utils/Utils.cpp.o CMakeFiles/WAI-.dir/src/main.cpp.o -o WAI- 
