@@ -8,17 +8,16 @@
 #include <iostream>
 #include <string>
 #include <map>
+#include <vector>
 #include "Token/Token.hpp"
 
 namespace WAI
 {
     class Parser
     {
-    private:
-        std::map<int, Token> tokens;
     public:
         Parser();
         ~Parser();
-        std::map<int, Token> parse(const std::string &content);
+        std::vector<Token> parse(const std::string &content);
     };
 } // namespace WAI

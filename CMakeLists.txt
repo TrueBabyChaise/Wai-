@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
-project(WAI- CXX)
+project(WAI_ CXX)
 
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
+set(CMAKE_CXX_COMPILER "C:/TDM-GCC-32/bin/g++.exe")
 
 # Collect source files
 file(GLOB_RECURSE SRC_MAIN
@@ -14,13 +15,12 @@ file(GLOB_RECURSE SRC_MAIN
 )
 
 # Create the executable
-add_executable(WAI- "${SRC_MAIN}")
-
+add_executable(WAI_ "${SRC_MAIN}")
 # Set properties
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
-set_property(TARGET WAI- PROPERTY CXX_STANDARD 23) # Use C++23
+set_property(TARGET WAI_ PROPERTY CXX_STANDARD 23) # Use C++23
 
-target_include_directories(WAI- PRIVATE "${SRC_DIR}") # Include the source directory
+target_include_directories(WAI_ PRIVATE "${SRC_DIR}") # Include the source directory
 
 # Precompiled header
-target_precompile_headers(WAI- PRIVATE "${SRC_DIR}/common.hpp")
+target_precompile_headers(WAI_ PRIVATE "${SRC_DIR}/common.hpp")

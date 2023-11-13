@@ -29,6 +29,8 @@ namespace WAI
             std::string getValue() const;
             Token::Type getType() const;
             std::string getTypeString() const;
+            bool isOperator();
+            bool isKeyword();
             void setValue(const std::string &value);
             void setType(const Token::Type &type);
 

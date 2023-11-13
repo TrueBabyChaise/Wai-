@@ -1,3 +1,0 @@
-/home/askou/AYAYA/Perso/Wai-/CMakeFiles/WAI-.dir
-/home/askou/AYAYA/Perso/Wai-/CMakeFiles/edit_cache.dir
-/home/askou/AYAYA/Perso/Wai-/CMakeFiles/rebuild_cache.dir

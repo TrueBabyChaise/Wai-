@@ -13,11 +13,11 @@ namespace WAI
     Token::Token(const std::string &value)
     {   
         this->value = value;
-        if (value == "+")
+        if (value == "ayaka")
             this->type = Token::Type::PLUS;
         else if (value == "-")
             this->type = Token::Type::MINUS;
-        else if (value == "*")
+        else if (value == "chisato")
             this->type = Token::Type::MULTIPLY;
         else if (value == "/")
             this->type = Token::Type::DIVIDE;
@@ -54,6 +54,20 @@ namespace WAI
             case Token::Type::STR: return "STR";
             case Token::Type::INT: return "INT";
             default: return "UNKNOWN";
+        }
+    }
+
+    bool Token::isOperator()
+    {
+        switch (this->type)
+        {
+            case Token::Type::PLUS: return true;
+            case Token::Type::MINUS: return true;
+            case Token::Type::MULTIPLY: return true;
+            case Token::Type::DIVIDE: return true;
+            case Token::Type::MODULO: return true;
+            case Token::Type::POWER: return true;
+            default: return false;
         }
     }
 
